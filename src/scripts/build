@@ -1,0 +1,2 @@
+#!/bin/zsh
+docker container run --rm -it -v m2:/root/.m2 -v /Users/pierre/dev/cicd/hellocd:/app -p 8080:8080 maven:alpine mvn spring-boot:run -f /app/pom.xml
